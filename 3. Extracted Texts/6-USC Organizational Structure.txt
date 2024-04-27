@@ -15,3 +15,13 @@ The Student Affairs and Services Office is composed of the following: Counsellin
 The Office of Administrators and Properties is composed of Physical Plant and Facilities Office (PPFO), Facilities Office, Maintenance Office, and Utilities Office. 
 
 The Vice President for Finance (VPF) is the chief financial officer of the University. He exercises jurisdiction over the Comptroller, Treasurer, and Head of the Budget and Purchasing Department. The Comptroller supervises the Accounting and Payroll Offices, while the Treasurer supervises the cash and fund officers.
+
+The departments under the School of Architecture, Fine Arts, and Design (SAFAD) are Department of Architecture and Department of Fine Arts. The departments under the School of Arts and Sciences are Department of Anthropology, Sociology, and History, Department of Biology, Department of Chemistry, Department of Communications, Linguistics, and Literature, Department of Computer, Information Sciences, and Mathematics, Department of Philosophy, Department of Physics, and Department of Psychology. The departments under the School of Business of Economics are Department of Accountancy, Department of Business Administration, Department of Economics, and Department of Hospitality Management. The department under the School of Education is Department of Teacher Education. The departments under the School of Healthcare Professions are Department of Nursing, Department of Nutrition and Dietetics, and Department of Pharmacy. The departments under the School of Engineering are Department of Chemical Engineering, Department of Civil Engineering, Department of Computer Engineering, Department of Electrical and Electronics Engineering, Department of Industrial Engineering, and Department of Mechanical and Manufacturing Engineering. The departments under the School of Law and Governance are College of Law and Department of Political Science. The subdepartments under the Basic Education Department are Lower Basic Education, Montessori Academy, and Senior High School.
+
+
+
+
+
+
+
+
