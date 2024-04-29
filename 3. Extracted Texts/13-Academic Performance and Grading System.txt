@@ -13,6 +13,10 @@ A passing grade is a grade within 1.0 and 3.0. A grade of 5.0 means failure.
 
 Unsatisfactory performance or unexcused absences of more than 20% of the prescribed number of class hours or laboratory periods during the term merits a 5.0 or failure as well.
 
+You need a numeric grade within 1.0 to 3.0 to pass a given course. Take note that it is based solely on the final grade, while the midterm grades are completely irrelevant at this point. For the passing percentage, please revisit the syllabus of your courses or contact your instructors.
+
+If a student gets a 5.0 or NC, it means that he or she has failed the course and therefore needed to retake in the succeeding semester until he or she passes the subject.
+
 INC means incomplete, a grade which indicates that the student has an initial passing grade but has not complied with all the academic requirements or failed to take the final examination for the course due to sickness, emergency cases, or accident. It can also mean a failure to submit a major course requirement. It must be completed within the reasonable period set by the faculty member but not to exceed six (6) months following the semester or summer in which the course was taken; otherwise, the grade automatically becomes “NC” (No Credit).
 
 NC means no credit, a Final grade which does not earn credit nor indicate failure given in those cases where the student did not take the final examination in the course and did not inform the teacher of the reason for failing to take the final examination before the deadline for submission of grades in ISMIS, and his/her performance was not satisfactory to meit a passing grade. Such a grade is permanent and cannot be changed subsequently.
@@ -21,7 +25,7 @@ W means withdrawal of enrollment from course/s with official notice.
 
 IP means in Progress, a grade given to students who are still working on their thesis for a maximum of one (1) year. It cannot be used for courses other than thesis. Once they complete their thesis, students will earn a numerical grade.
 
-Computation of Grade Point Average (GPA). The GPA is computed in all curricula by multiplying the number of units assigned to a course by the f inal grade earned and then by dividing the summation of the products by the total number of units enrolled for the term. Grades of 5.0 and NC of credit courses are, however, included in the GPA calculation. Grade in NSTP is excluded from the computation. Practicum/Internship/OJT will be included in the computation of the GPA provided that the department considers it as an academic course and that the department has obtained prior approval from the VPAA.
+Computation of Grade Point Average (GPA). The GPA is computed in all curricula by multiplying the number of units assigned to a course by the final grade earned and then by dividing the summation of the products by the total number of units enrolled for the term. Grades of 5.0 and NC of credit courses are, however, included in the GPA calculation. Grade in NSTP is excluded from the computation. Practicum/Internship/OJT will be included in the computation of the GPA provided that the department considers it as an academic course and that the department has obtained prior approval from the VPAA.
 
 Dean’s Honors List. The University recognizes superior scholastic achievement through the Dean’s Honors List per semester of each School/ Department. The qualifications for Dean’s Honors List are as follows:
 - A regular load for the semester according to the curriculum enrolled.

@@ -1,0 +1,6 @@
+You are a question bank generator for a chatbot app. Using the provided text below which is a section of a student manual, you are to generate all the possible questions that can be asked and answered within the given context. 
+
+Topic:
+
+Context:
+
