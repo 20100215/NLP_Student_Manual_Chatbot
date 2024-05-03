@@ -1,0 +1,100 @@
+How is a student considered full-time in a bachelor's or associate program?
+Answer: A student is considered full-time if he/she carries a regular load prescribed in his/her curriculum for a given time.
+What determines the curricular year of a student?
+Answer: The curricular year of a student is determined by the number of units earned in the curriculum of his/her program.
+What is the consequence of taking a course ahead of its prerequisite?
+Answer: No course(s) can be taken ahead of its/their prerequisite(s); otherwise, it/they shall be nullified and taken again even if the student is graduating.
+When should laboratory courses be taken?
+Answer: Laboratory courses should be taken with the corresponding lecture courses in the same semester even though separate grades are earned.
+What is the condition for withdrawal of co-requisite courses?
+Answer: In case of withdrawal of co-requisites, both courses should be withdrawn together.
+Under what circumstances can a failed co-requisite course be re-enrolled?
+Answer: A failed co-requisite course can be re-enrolled without re-enrolling the other course the student has passed.
+What is the application process for course adjustments?
+Answer: Application for course adjustments is in ISMIS.
+How many units can a student have in excess of the regular load under overload conditions?
+Answer: A student may have an overload of not more than six (6) units in excess of the regular load.
+What is the requirement for simultaneous enrollment in prerequisite and advanced courses?
+Answer: Simultaneous enrollment involves enrolling in the prerequisite course and the advanced course simultaneously to graduate during the final term.
+How many subjects are restricted for simultaneous enrollment?
+Answer: Simultaneous enrollment is restricted to only a particular two-subject load.
+What are the conditions for requesting a petitioned or tutorial course?
+Answer: The conditions for requesting a petitioned or tutorial course include being an off-semester course and being a prerequisite course for the next semester offering.
+When can the override rule be applied?
+Answer: The override rule due to an INC grade of a prerequisite course may be allowed in the last academic year prior to graduation.
+How are courses accredited based on equivalence in course content and level of instruction?
+Answer: Accreditation of courses should be on the basis of equivalence in course content and level of instruction.
+What is the maximum allowable residency (MAR)?
+Answer: The maximum allowable residency (MAR) is equal to the required number of years to complete the course multiplied by 1.5.
+What is required for a student to file a leave of absence?
+Answer: A student who does not intend to enroll during the following semester is required to file a leave of absence for a maximum of one (1) year prior to its effectivity.
+How many official general examinations are required every term?
+Answer: Four (4) official general examinations are required every term: pre-midterm, mid-term, pre-final, and final examinations.
+Where can students check their grades?
+Answer: Students are advised to check their grades through their ISMIS account.
+What may the University do regarding the grades of students with academic deficiencies?
+Answer: The University is authorized to withhold access to grades of students who may have an academic deficiency.
+What is the condition for being officially enrolled as a student?
+Answer: A student is officially enrolled after he/she has submitted the required documentation requirements as indicated in Section 2.5 of this Manual at the Office of the University Registrar, has made an initial payment of school fees, and has been issued or has downloaded a validated Study Load that authorizes him/her to attend classes.
+Where can students view their grades, class schedules, and apply for student requests?
+Answer: Officially enrolled students can view grades, class schedules, and apply for student requests (withdrawal, program shift, overload, etc.) in the ISMIS portal.
+Can students pay tuition and other school fees in installments?
+Answer: Yes, students who cannot pay their tuition and other fees in full during enrollment may settle their account on an installment basis.
+Where is the cashier located for fee payments?
+Answer: The cashier for fee payments is located at the ground floor of Bunzel building.
+What are the consequences of failing to file a leave of absence?
+Answer: Failure to file a leave of absence shall have consequences including continued counting towards Maximum Allowable Residency (MAR) and adherence to new curriculum requirements upon return.
+How are requests for course adjustments processed?
+Answer: Requests for course adjustments are processed in ISMIS.
+What is the purpose of the override rule?
+Answer: The override rule allows students to proceed with advanced courses despite having an incomplete prerequisite course.
+How are courses accredited for foreign students?
+Answer: Necessary precautions should be taken in the case of foreign students in accrediting units earned abroad.
+Can courses taken abroad be accredited?
+Answer: Yes, earned units and credits taken abroad may be accredited, subject to certain conditions.
+How are residency requirements determined for students?
+Answer: Residency requirements are determined based on the period specified in the program.
+What is the consequence of failing to file a leave of absence?
+Answer: Failure to file a leave of absence can lead to continued counting towards Maximum Allowable Residency (MAR).
+What are the conditions for simultaneous enrollment in prerequisite and advanced courses?
+Answer: Simultaneous enrollment is restricted to enrolling in the prerequisite course and the advanced course simultaneously to graduate during the final term.
+What is the purpose of the Maximum Allowable Residency (MAR)?
+Answer: The Maximum Allowable Residency (MAR) is designed to cover the conduct of research/thesis as part of the program requirement.
+Where can students find information about examination dates?
+Answer: Examination dates are posted on USC's official website.
+How are course descriptions used in the accreditation process?
+Answer: Course descriptions are used as bases for accreditation of courses.
+Can students access their grades if they have academic deficiencies?
+Answer: The University is authorized to withhold access to grades of students who may have an academic deficiency.
+How are course adjustments applied for?
+Answer: Course adjustments are applied for in ISMIS.
+What are the requirements for a student to be officially enrolled?
+Answer: A student must submit required documentation, make an initial payment of school fees, and be issued a validated Study Load to be officially enrolled.
+Where can students pay their tuition and other fees?
+Answer: Students can pay their fees at the cashier located at the ground floor of Bunzel building or through online means.
+What is the purpose of the leave of absence?
+Answer: The leave of absence allows students to temporarily withdraw from enrollment for a maximum of one (1) year.
+How is residency calculated for students?
+Answer: Residency is calculated based on the specified period in the program, multiplied by 1.5 for Maximum Allowable Residency (MAR).
+What happens if a student fails to file a leave of absence?
+Answer: Failure to file a leave of absence may lead to continued counting towards Maximum Allowable Residency (MAR).
+Where can students request for course adjustments?
+Answer: Students can request for course adjustments in ISMIS.
+Can students take advanced courses without completing prerequisites?
+Answer: Yes, the override rule allows students to take advanced courses even if prerequisites are incomplete.
+How are courses accredited for foreign students?
+Answer: Necessary precautions should be taken in accrediting units earned abroad for foreign students.
+Can courses taken abroad be accredited?
+Answer: Yes, courses taken abroad can be accredited, subject to certain conditions.
+What is the purpose of the Maximum Allowable Residency (MAR)?
+Answer: The MAR is designed to cover the conduct of research/thesis as part of the program requirement.
+Where can students find examination dates?
+Answer: Examination dates are posted on USC's official website.
+How are course descriptions used in accreditation?
+Answer: Course descriptions are used as bases for accrediting courses.
+Can students access grades if they have academic deficiencies?
+Answer: The University may withhold access to grades of students with academic deficiencies.
+How are course adjustments requested?
+Answer: Course adjustments are requested in ISMIS.
+What are the conditions for a student to be officially enrolled?
+Answer: A student must submit required documentation, pay initial school fees, and obtain a validated Study Load to be officially enrolled.

@@ -1,5 +1,0 @@
-Overload is an enrollment request where a student will enroll more than the maximum number of allowed units in a semester. Requests for overload is a special case made available for a graduating student so he/she can graduate on time. The allowable maximum number of units for overload is 6 units.
-
-To apply for overload, click “Student Task”, “Enrollment Related”, and “Apply Overload”.  In the form, indicate the academic year and period, the courses which will be an overload, and the reason for applying for overload, then click “Submit”. You may monitor your status at “Application History” which includes chair for endorsement, dean for endorsement, and registrar for approval. 
-
-Once approved, the registrar staff will be the one to advise the course. If you can still access the enrollment module, you can now choose a schedule by clicking "Enroll". Otherwise, registrar staff will be the one to enroll you to the course.

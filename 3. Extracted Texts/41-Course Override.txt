@@ -1,0 +1,5 @@
+Course override is s a request to be filed if a student incurred a grade of "INC" in his/her pre-requisite course and would like to enroll in the succeeding course. You are eligible to apply for course override if you are a graduating student for the semester you are currently in. Failure in the prerequisite course invalidates the succeeding course even if you get a passing grade for the latter. The system automatically considers it as a failure.
+
+To apply for course override, go to "Student Task", "Enrollment Related", and "Apply Override". Search for the succeeding course you would like to enroll in and click "Submit". You may monitor your status at "Application History" which includes chair for endorsement, dean for endorsement, and registrar for approval.
+
+Once approved, the registrar staff will be the one to advise the course. If you can still access the enrollment module, you can now choose a schedule by clicking "Enroll". Otherwise, registrar staff will be the one to enroll you to the course.
