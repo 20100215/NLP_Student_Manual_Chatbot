@@ -1,0 +1,71 @@
+USC stands for University of San Carlos.
+SVD stands for Society of the Divine Word.
+PAASCU stands for Philippine Accrediting Association of Schools, Colleges, and Universities.
+PTC-ACBET stands for Philippine Technological Council-Accreditation and Certification Board for Engineering and Technology.
+CHED stands for Commission on Higher Education.
+COE stands for Center of Excellence.
+COD stands for Center of Development.
+QS stands for Quacquarelli Symonds.
+IPQA stands for Institutional Planning and Quality Assurance.
+PAMS stands for Office of the Presidential Assistant for Mission and Spirituality.
+OVPAA stands for Office of the Vice President for Academic Affairs.
+RDEPO stands for Research, Development, Extension and Publications Office.
+ERIO stands for External Relations and Internationalization Office.
+CES stands for Community Extension Services.
+NSTP stands for National Service Training Program.
+VPAd stands for Vice President for Administration.
+IRMO stands for Information Resources Management Office.
+SASO stands for Student Affairs and Services Office.
+OAP stands for Office of Administrator of Properties.
+DPO stands for Data Privacy Office.
+HRMO stands for Human Resource Management Office.
+OAASJP stands for Office of Alumni Affairs, Scholarship and Job Placement.
+ONES stands for Office of Naming Rights, Endowments and Scholarships.
+OSFA stands for Office of Student Formation and Activities.
+CDC stands for Counselling and Development Center.
+HSO stands for Health Services Office.
+PAG stands for Performing Arts Group.
+ARC stands for Athletics and Recreation Center.
+PPFO stands for Physical Plant and Facilities Office.
+VPF stands for Vice President for Finance.
+SAFAD stands for School of Architecture, Fine Arts, and Design.
+SAS stands for School of Arts and Sciences.
+SBE stands for School of Business and Economics.
+SOE stands for School of Engineering.
+SHCP stands for School of Healthcare Professions.
+SOE stands for School of Engineering.
+SLG stands for School of Law and Governance.
+BED stands for Basic Education.
+DASH stands for Department of Anthropology, Sociology, and History.
+DCISM stands for Department of Computer, Information Sciences, and Mathematics.
+DCLL stands for Department of Communications, Linguistics, and Literature.
+DCPE stands for Department of Computer Engineering.
+DEEE stands for Department of Electrical and Electronics Engineering.
+ORA stands for University Office of Recruitment and Admissions.
+CAE stands for College Admission Examinations.
+HCCH stands for Hague Conference on Private International Law.
+CTC stands for Certificate of Transfer Credentials.
+NBCR stands for Native Born Certificate of Registration.
+ACR stands for Alien Certificate of Registration.
+SSP stands for Special Study Permit .
+PHS stands for Personal History Statement.
+ISMIS stands for Integrated School Management Information System.
+TOR stands for Transcript of Records.
+MAR stands for Maximum Allowable Residency.
+EDM stands for Education with a Mission.
+TPE stands for Physical Education.
+GPA stands for Grade Point Average.
+CWTS stands for Civic Welfare Training Service.
+LTS stands for Literacy Training Service.
+ROTC stands for Reserve Officers Training Corps.
+INC stands for Incomplete.
+NC stands for No credit.
+CHL stands for Carolinian Honor's List.
+CLG stands for Carolinian Lifestyle Guide.
+SSC stands for Supreme Student Council.
+AGC stands for Awards and Graduation Committee .
+PWD stands for Persons with Disabilities.
+SDM stands for Student Development Mentors.
+SDEVCOM stands for Student Development Committee.
+SDO stands for Student Discipline Officer .
+SDC stands for Student Discipline Committee.
