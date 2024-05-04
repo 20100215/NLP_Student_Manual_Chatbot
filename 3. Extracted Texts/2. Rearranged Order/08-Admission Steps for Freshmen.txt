@@ -1,0 +1,20 @@
+Topic 8: Admission Steps for Freshmen
+
+The initial requirements for new freshmen applicants are as follows, which should be prepared before applying for admission online:
+1. Grade 12 grades duly certified/signed by the School Registrar/Principal. If the student is currently enrolled, at least the first semester grades should be present. 
+2. School ID (A Certificate of Eligibility is required should there be no available school ID, download the certificate by going to this link: https://ismis.usc.edu.ph/Apply/DownloadCERT)
+3. 1 copy 2x2 colored photo with white background
+4. Diploma in Senior High School (if by the time of application, the applicant graduated already in Grade 12, duly signed and authenticated by the School Registrar/Principal, a Declaration Form as a New Student should be signed and submitted). 
+
+Below are the steps for applying as a new freshmen online in the ISMIS portal:
+1. Go to https://ismis.usc.edu.ph and click "Applicants for Admission Graduate, Tertiary & Senior High School".
+2. Click the "Submit Admission Application tab" at the bottom of the page, or "Submit Admission Application for 2nd Courser and Continuing Students" for USC senior high school graduates and those who were already issued a Student ID in the past, or "International Applicants" tab for International Passport Holders, Dual Citizens, or Filipino Graduates Abroad.
+3. Fill out the Personal Data Sheet and complete all fields.
+4. Attach the required documents one by one. For every file, click the "Start Upload" button to upload the file.
+5. Complete the Captcha. 
+6. Click the Submit button.
+
+Below are the steps to check the application status and how to upload additional documents in ISMIS.
+1. Go to https://ismis.usc.edu.ph and click "Applicants for Admission Graduate, Tertiary & Senior High School".
+2. Click the "Check Status of Submitted Application" button at the bottom of the page. Complete the required fields and click the Search Applicant button.
+3. To add more documents, click on the "Files Uploaded" button or icon.

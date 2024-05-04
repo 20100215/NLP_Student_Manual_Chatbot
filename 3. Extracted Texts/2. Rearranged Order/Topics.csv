@@ -29,7 +29,7 @@
 28,56,11,2,Additional Enrollment Steps (Shiftee)
 29,57,11,3,Additional Enrollment Steps (Returnee-shiftee)
 30,58,11,4,Additional Enrollment Steps (Scholarship and Financial Assistance)
-31,59,11,5,Family and Sibling Discount
+31,59,11,5,Fee Discounts
 32,60,11,6,Transferring out of USC
 33,61,12,1,USC Email and Canvas
 34,10,2,3,Fees and Fees Adjustments
@@ -43,9 +43,9 @@
 42,34,6,4,Qualification and percentage distribution
 43,35,6,5,Process and Computation
 44,36,6,6,CHL Awards for Commencement Rites
-45,37,7,1,Civilian Attire and Grooming
+45,17,3,2,Code of Conduct for Students
 46,16,3,1,Rationale of Discipline and positive School Climate
-47,17,3,2,Code of Conduct for Students
+47,37,7,1,Civilian Attire and Grooming
 48,18,3,3,Progressive and Positive Discipline Policy
 49,19,3,4,University-Wide Discipline and Persons in Authority
 50,20,3,5,Categories and Ranking of Offenses

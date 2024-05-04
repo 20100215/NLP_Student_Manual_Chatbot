@@ -1,0 +1,26 @@
+Topic 33: USC Email and Canvas
+
+Students can now use their USC Google Workspace account. Kindly take note of the following:
+
+1. Students email convention is idnumber@usc.edu.ph (e.g. 12345@usc.edu.ph). Use this complete email address when logging in. Your default password is lastname + your idnumber (e.g. delacruz12345). Once logged in, kindly create a recovery email so that you can reset your password anytime in case you forget.
+
+2. Gmail will automatically ask you to change your password but just in case, set up a recover email:
+Step 1: Go to "Manage your Google account".
+Step 2: Personal Info.
+Step 3: Contact Info.
+Step 4: Recovery Email.
+
+3. Please use the official USC Google account responsibly and in accordance with Google Workspace for Education Terms of Service.
+(https://gsuite.google.com/terms/education_terms.html)
+
+
+The official Learning Management System (LMS) for University of San Carlos is Canvas. Follow the steps below to set your password and access the Canvas Learning Management System Portal.
+1. Go to https://usc.instructure.com.
+2. Click the "Forgot Password" link.
+3. Provide your USC email address.
+4. Click the "Request Password" button.
+5. Check your USC email for the reset password link sent by Canvas. Check the Spam box as well since there are instances where the email from Canvas is saved in the Spam box.
+6. Click the Reset Password link in the email and set your preferred password.
+7. Login to Canvas at https://usc.instructure.com.
+8. Username: your USC email address.
+9. Your enrolled courses are displayed on the dashboard.
