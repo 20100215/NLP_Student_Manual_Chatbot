@@ -82,8 +82,9 @@ with st.sidebar:
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
-    chain = init_chain()
-    st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
+    with st.spinner("Initializing, please wait..."):
+        st.session_state.chain = init_chain()
+        st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -101,7 +102,7 @@ def generate_response(prompt_input):
     # Initialize result
     result = ''
     # Invoke chain
-    res = chain.invoke(prompt_input)
+    res = st.session_state.chain.invoke(prompt_input)
     # Process response
     if('According to the provided context, ' in res['answer']):
         res['answer'] = res['answer'][35:]
