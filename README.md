@@ -1,4 +1,4 @@
-# USC Student Manual Chatbot
+# Carolinian Chatbot
 
 Chat about anything USC related here! NOTE: Not OpenAI, but open-sourced Llama 3
 
