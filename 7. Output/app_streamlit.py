@@ -1,43 +1,84 @@
 import streamlit as st
-import replicate
 import os
 
+# Langchain and HuggingFace
+from langchain.vectorstores import Chroma
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_groq import ChatGroq
+from langchain.chains import ConversationalRetrievalChain
+from langchain.memory import ChatMessageHistory, ConversationBufferMemory
+
+
+# Load embeddings, model, and vector store
+os.environ['HF_TOKEN'] = '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'
+groq_api_key = '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'
+
+model_kwargs = {'trust_remote_code': True}
+embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
+vectordb = Chroma(persist_directory='db', embedding_function=embedding)
+
+# Initialize message history for conversation
+message_history = ChatMessageHistory()
+
+# Memory for conversational context
+memory = ConversationBufferMemory(
+    memory_key="chat_history",
+    output_key="answer",
+    chat_memory=message_history,
+    return_messages=True,
+)
+
+# Create a chain that uses the Chroma vector store
+chain = ConversationalRetrievalChain.from_llm(
+    llm=llm,
+    chain_type="stuff",
+    retriever=vectordb.as_retriever(),
+    memory=memory,
+    return_source_documents=True
+)
+
+
 # App title
-st.set_page_config(page_title="🦙💬 Llama 2 Chatbot")
+st.set_page_config(page_title="Student Manual Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title('🦙💬 Llama 2 Chatbot')
-    if 'REPLICATE_API_TOKEN' in st.secrets:
-        st.success('API key already provided!', icon='✅')
-        replicate_api = st.secrets['REPLICATE_API_TOKEN']
-    else:
-        replicate_api = st.text_input('Enter Replicate API token:', type='password')
-        if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
-            st.warning('Please enter your credentials!', icon='⚠️')
-        else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+    st.title('📖💬 Student Manual Chatbot')
+    st.info('Chat with this bot to gain answers to your concerns about the USC Student Manual and Enrollment Guide!', icon='🛈')
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
-    st.subheader('Models and parameters')
-    selected_model = st.sidebar.selectbox('Choose a Llama2 model', ['Llama2-7B', 'Llama2-13B', 'Llama2-70B'], key='selected_model')
-    if selected_model == 'Llama2-7B':
-        llm = 'a16z-infra/llama7b-v2-chat:4f0a4744c7295c024a1de15e1a63c880d3da035fa1f49bfd344fe076074c8eea'
-    elif selected_model == 'Llama2-13B':
-        llm = 'a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5'
-    else:
-        llm = 'replicate/llama70b-v2-chat:e951f18578850b652510200860fc4ea62b3b16fac280f83ff32282f87bbd2e48'
+    st.subheader('Topics Covered:')
+    st.markdown('''
+                - About USC
+                - History of USC
+                - Admission
+                - Enrollment Steps
+                - Enrollment Mechanics
+                - Tutorial and Petition
+                - Overload and Simultaneous Enrollment
+                - Graduation
+                - Change of Program
+                - Academic and Grade Policies
+                - Student Discipline and Offenses
+                - Code of Conduct
+                - Carolinian Honors List / Latin Honors
+                - Directory of Student Support Services
+                - Directory of Academic Departments
+                ''')
     
-    temperature = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
-    top_p = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
-    max_length = st.sidebar.slider('max_length', min_value=64, max_value=4096, value=512, step=8)
-    
-    st.markdown('📖 Learn how to build this app in this [blog](https://blog.streamlit.io/how-to-build-a-llama-2-chatbot/)!')
-os.environ['REPLICATE_API_TOKEN'] = replicate_api
+    st.markdown('''
+                Access the resources here:
+                    - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)!
+                    - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
+                ''')
+    st.markdown('Developed by: [Wayne Dayata](https://github.com/20100215)')
+
+
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -45,24 +86,32 @@ for message in st.session_state.messages:
         st.write(message["content"])
 
 def clear_chat_history():
-    st.session_state.messages = [{"role": "assistant", "content": "How may I assist you today?"}]
+    st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
-# Function for generating LLaMA2 response
-def generate_llama2_response(prompt_input):
-    string_dialogue = "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'."
-    for dict_message in st.session_state.messages:
-        if dict_message["role"] == "user":
-            string_dialogue += "User: " + dict_message["content"] + "\n\n"
-        else:
-            string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
-    output = replicate.run(llm, 
-                           input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                                  "temperature":temperature, "top_p":top_p, "max_length":max_length, "repetition_penalty":1})
-    return output
+
+
+# Function for generating response
+def generate_response(prompt_input):
+    # Initialize result
+    result = ''
+    # Invoke chain
+    res = chain.invoke(prompt_input)
+    # Process response
+    if('According to the provided context, ' in res['answer']):
+        res['answer'] = res['answer'][35:]
+        res['answer'] = res['answer'][0].upper() + res['answer'][1:]
+    result += res['answer']
+    # Process sources
+    result += '\n\nSources:\n'
+    sources = set(res["source_documents"]) # Remove duplicate sources
+    for source in sources:
+        result += source.metadata['source'][3:-4] # Remove XX- and .txt
+        result += '\n'
+    return result
 
 # User-provided prompt
-if prompt := st.chat_input(disabled=not replicate_api):
+if prompt := st.chat_input(placeholder="Enter your message here: "):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.write(prompt)
@@ -70,13 +119,9 @@ if prompt := st.chat_input(disabled=not replicate_api):
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
-        with st.spinner("Thinking..."):
-            response = generate_llama2_response(prompt)
+        with st.spinner("Generating response..."):
+            response = generate_response(prompt)
             placeholder = st.empty()
-            full_response = ''
-            for item in response:
-                full_response += item
-                placeholder.markdown(full_response)
-            placeholder.markdown(full_response)
-    message = {"role": "assistant", "content": full_response}
+            placeholder.markdown(response)
+    message = {"role": "assistant", "content": response}
     st.session_state.messages.append(message)
