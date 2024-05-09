@@ -71,8 +71,8 @@ with st.sidebar:
     st.markdown('''
                 Access the resources here:
 
-                    - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)!
-                    - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
+                - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)
+                - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
                 ''')
     st.markdown('Developed by: [Wayne Dayata](https://github.com/20100215)')
 
