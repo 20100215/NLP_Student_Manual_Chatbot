@@ -113,7 +113,7 @@ def generate_response(prompt_input):
     return result
 
 # User-provided prompt
-if prompt := st.chat_input(placeholder="Enter your message here: "):
+if prompt := st.chat_input(placeholder="Ask a question..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.write(prompt)
