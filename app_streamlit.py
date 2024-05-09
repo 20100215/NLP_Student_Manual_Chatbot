@@ -106,10 +106,14 @@ def generate_response(prompt_input):
     result += res['answer']
     # Process sources
     result += '\n\nSources:\n'
-    sources = set(res["source_documents"]) # Remove duplicate sources
+    sources = [] 
+    for source in res["source_documents"]:
+        sources.append(source.metadata['source'][3:-4]) # Remove XX- and .txt
+    sources = set(sources) # Remove duplicate sources (multiple chunks)
     for source in sources:
-        result += source.metadata['source'][3:-4] # Remove XX- and .txt
+        result += source
         result += '\n'
+        
     return result
 
 # User-provided prompt
