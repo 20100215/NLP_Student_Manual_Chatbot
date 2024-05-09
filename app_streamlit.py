@@ -32,11 +32,11 @@ def init_chain():
 
 
 # App title
-st.set_page_config(page_title="Student Manual Chatbot")
+st.set_page_config(page_title="Carolinian Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
-    st.header('📖💬 Student Manual Chatbot')
+    st.title('📖💬 Carolinian Chatbot')
     st.info('Ask anything USC related here!')
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
