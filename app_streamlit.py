@@ -97,10 +97,11 @@ def generate_response(prompt_input):
     sources = [] 
     for source in res["source_documents"]:
         sources.append(source.metadata['source'][3:-4]) # Remove XX- and .txt
+    top_source = sources[0]
     sources = set(sources) # Remove duplicate sources (multiple chunks)
     result += ", ".join(sources)
 
-    return result, res['result'], sources[0]
+    return result, res['result'], top_source
 
 # User-provided prompt
 if prompt := st.chat_input(placeholder="Ask a question..."):
