@@ -56,14 +56,10 @@ with st.sidebar:
     st.subheader('Topics Covered:')
     st.markdown('''
                 - About USC
-                - History of USC
-                - Admission
-                - Enrollment Steps
-                - Enrollment Mechanics
-                - Tutorial and Petition
-                - Overload and Simultaneous Enrollment
+                - Admission and Enrollment
+                - Tutorial, Petition, Overload
+                - Simultaneous Enrollment, Override
                 - Graduation
-                - Change of Program
                 - Academic and Grade Policies
                 - Student Discipline and Offenses
                 - Code of Conduct
@@ -74,6 +70,7 @@ with st.sidebar:
     
     st.markdown('''
                 Access the resources here:
+
                     - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)!
                     - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
                 ''')
