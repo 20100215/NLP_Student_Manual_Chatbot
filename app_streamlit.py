@@ -56,13 +56,11 @@ with st.sidebar:
     st.subheader('Topics Covered:')
     st.markdown('''
                 - About USC
-                - Admission and Enrollment
+                - Admission, Enrollment, Graduation
                 - Tutorial, Petition, Overload
                 - Simultaneous Enrollment, Override
-                - Graduation
                 - Academic and Grade Policies
-                - Student Discipline and Offenses
-                - Code of Conduct
+                - Code of Conduct and Offenses
                 - Carolinian Honors List / Latin Honors
                 - Directory of Student Support Services
                 - Directory of Academic Departments
@@ -113,7 +111,7 @@ def generate_response(prompt_input):
     for source in sources:
         result += source
         result += '\n'
-        
+
     return result
 
 # User-provided prompt
