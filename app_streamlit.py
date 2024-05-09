@@ -17,31 +17,35 @@ from langchain.memory import ChatMessageHistory, ConversationBufferMemory
 # Load embeddings, model, and vector store
 os.environ['HF_TOKEN'] = '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'
 groq_api_key = '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'
-
 model_kwargs = {'trust_remote_code': True}
-embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
-vectordb = Chroma(persist_directory='db', embedding_function=embedding)
 
-# Initialize message history for conversation
-message_history = ChatMessageHistory()
+def init_chain():
+    embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
+    llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
+    vectordb = Chroma(persist_directory='db', embedding_function=embedding)
 
-# Memory for conversational context
-memory = ConversationBufferMemory(
-    memory_key="chat_history",
-    output_key="answer",
-    chat_memory=message_history,
-    return_messages=True,
-)
+    # Initialize message history for conversation
+    message_history = ChatMessageHistory()
 
-# Create a chain that uses the Chroma vector store
-chain = ConversationalRetrievalChain.from_llm(
-    llm=llm,
-    chain_type="stuff",
-    retriever=vectordb.as_retriever(),
-    memory=memory,
-    return_source_documents=True
-)
+    # Memory for conversational context
+    memory = ConversationBufferMemory(
+        memory_key="chat_history",
+        output_key="answer",
+        chat_memory=message_history,
+        return_messages=True,
+    )
+
+    # Create a chain that uses the Chroma vector store
+    chain = ConversationalRetrievalChain.from_llm(
+        llm=llm,
+        chain_type="stuff",
+        retriever=vectordb.as_retriever(),
+        memory=memory,
+        return_source_documents=True
+    )
+
+    return chain
+
 
 
 # App title
@@ -78,6 +82,7 @@ with st.sidebar:
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
+    st.session_state.chain = init_chain()
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
 # Display or clear chat messages
