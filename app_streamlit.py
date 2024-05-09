@@ -1,6 +1,11 @@
 import streamlit as st
 import os
 
+# initialize new sqlite3
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 # Langchain and HuggingFace
 from langchain.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
