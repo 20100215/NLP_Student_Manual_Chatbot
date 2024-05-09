@@ -17,6 +17,7 @@ os.environ['HF_TOKEN'] = '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'
 groq_api_key = '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'
 model_kwargs = {'trust_remote_code': True}
 
+@st.experimental_singleton
 def init_chain():
     embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
     llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
