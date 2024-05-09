@@ -10,9 +10,7 @@ sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 from langchain.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
-from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ChatMessageHistory, ConversationBufferMemory
-
+from langchain.chains import RetrievalQA
 
 # Load embeddings, model, and vector store
 os.environ['HF_TOKEN'] = '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'
@@ -24,25 +22,11 @@ def init_chain():
     llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
     vectordb = Chroma(persist_directory='db', embedding_function=embedding)
 
-    # Initialize message history for conversation
-    message_history = ChatMessageHistory()
-
-    # Memory for conversational context
-    memory = ConversationBufferMemory(
-        memory_key="chat_history",
-        output_key="answer",
-        chat_memory=message_history,
-        return_messages=True,
-    )
-
-    # Create a chain that uses the Chroma vector store
-    chain = ConversationalRetrievalChain.from_llm(
-        llm=llm,
-        chain_type="stuff",
-        retriever=vectordb.as_retriever(),
-        memory=memory,
-        return_source_documents=True
-    )
+    # Create chain
+    chain = RetrievalQA.from_chain_type(llm=llm,
+                                  chain_type="stuff",
+                                  retriever=vectordb.as_retriever(),
+                                  return_source_documents=True)
 
     return chain
 
@@ -109,14 +93,12 @@ def generate_response(prompt_input):
         res['answer'] = res['answer'][0].upper() + res['answer'][1:]
     result += res['answer']
     # Process sources
-    result += '\n\nSources:\n\n'
+    result += '\n\nSources: '
     sources = [] 
     for source in res["source_documents"]:
         sources.append(source.metadata['source'][3:-4]) # Remove XX- and .txt
     sources = set(sources) # Remove duplicate sources (multiple chunks)
-    for source in sources:
-        result += source
-        result += '\n\n'
+    result += ", ".join(sources)
 
     return result
 
