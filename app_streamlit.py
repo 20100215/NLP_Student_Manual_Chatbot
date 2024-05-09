@@ -50,7 +50,7 @@ st.set_page_config(page_title="Student Manual Chatbot")
 # Replicate Credentials
 with st.sidebar:
     st.title('📖💬 Student Manual Chatbot')
-    st.info('Chat with this bot to gain answers to your concerns about the USC Student Manual and Enrollment Guide!', icon='🛈')
+    st.info('Chat with this bot to gain answers to your concerns about the USC Student Manual and Enrollment Guide!')
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
     st.subheader('Topics Covered:')
