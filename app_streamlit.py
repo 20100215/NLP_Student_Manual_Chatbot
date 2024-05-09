@@ -116,8 +116,8 @@ if st.session_state.messages[-1]["role"] != "assistant":
             placeholder = st.empty()
             placeholder.markdown(response)
     message = {"role": "assistant", "content": response}
-    
+
     # Post question and answer to Google Sheets via Apps Script
     url = os.environ['SCRIPT_URL']
-    requests.post(url, {"question": prompt, "answer": response})
+    requests.post(url, json = {"question": prompt, "answer": response})
     st.session_state.messages.append(message)
