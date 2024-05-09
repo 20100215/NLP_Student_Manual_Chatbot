@@ -38,8 +38,8 @@ st.set_page_config(page_title="Student Manual Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title('📖💬 Student Manual Chatbot')
-    st.info('Chat about anything USC related here!')
+    st.subheader('📖💬 Student Manual Chatbot')
+    st.info('Ask anything USC related here!')
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
     st.subheader('Topics Covered:')
@@ -53,6 +53,7 @@ with st.sidebar:
                 - Carolinian Honors List / Latin Honors
                 - Directory of Student Support Services
                 - Directory of Academic Departments
+                - Motor Vehicle Pass / Car Stickers
                 ''')
     
     st.markdown('''
@@ -61,7 +62,7 @@ with st.sidebar:
                 - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)
                 - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
                 ''')
-    st.markdown('Developed by: [Wayne Dayata](https://github.com/20100215)')
+    st.markdown('Developed by: [Wayne Dayata (GitHub)](https://github.com/20100215)')
 
 
 
