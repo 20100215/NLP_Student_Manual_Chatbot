@@ -109,14 +109,14 @@ def generate_response(prompt_input):
         res['answer'] = res['answer'][0].upper() + res['answer'][1:]
     result += res['answer']
     # Process sources
-    result += '\n\nSources:\n'
+    result += '\n\nSources:\n\n'
     sources = [] 
     for source in res["source_documents"]:
         sources.append(source.metadata['source'][3:-4]) # Remove XX- and .txt
     sources = set(sources) # Remove duplicate sources (multiple chunks)
     for source in sources:
         result += source
-        result += '\n'
+        result += '\n\n'
 
     return result
 
