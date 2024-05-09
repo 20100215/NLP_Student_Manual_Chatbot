@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import requests
 
 # initialize new sqlite3
 __import__('pysqlite3')
@@ -13,14 +14,11 @@ from langchain_groq import ChatGroq
 from langchain.chains import RetrievalQA
 
 # Load embeddings, model, and vector store
-os.environ['HF_TOKEN'] = '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'
-groq_api_key = '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'
-model_kwargs = {'trust_remote_code': True}
-
 @st.cache_resource # Singleton, prevent multiple initializations
 def init_chain():
+    model_kwargs = {'trust_remote_code': True}
     embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
-    llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama3-70b-8192", temperature=0.2)
+    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0.2)
     vectordb = Chroma(persist_directory='db', embedding_function=embedding)
 
     # Create chain
@@ -118,4 +116,8 @@ if st.session_state.messages[-1]["role"] != "assistant":
             placeholder = st.empty()
             placeholder.markdown(response)
     message = {"role": "assistant", "content": response}
+    
+    # Post question and answer to Google Sheets via Apps Script
+    url = os.environ['SCRIPT_URL']
+    requests.post(url, {"question": prompt, "answer": response})
     st.session_state.messages.append(message)
