@@ -82,7 +82,7 @@ with st.sidebar:
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
-    st.session_state.chain = init_chain()
+    chain = init_chain()
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
 # Display or clear chat messages
