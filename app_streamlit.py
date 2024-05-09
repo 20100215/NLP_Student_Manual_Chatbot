@@ -88,10 +88,10 @@ def generate_response(prompt_input):
     # Invoke chain
     res = st.session_state.chain.invoke(prompt_input)
     # Process response
-    if('According to the provided context, ' in res['answer']):
-        res['answer'] = res['answer'][35:]
-        res['answer'] = res['answer'][0].upper() + res['answer'][1:]
-    result += res['answer']
+    if('According to the provided context, ' in res['result']):
+        res['result'] = res['result'][35:]
+        res['result'] = res['result'][0].upper() + res['result'][1:]
+    result += res['result']
     # Process sources
     result += '\n\nSources: '
     sources = [] 
