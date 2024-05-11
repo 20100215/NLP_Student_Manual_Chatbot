@@ -1,0 +1,12 @@
+Bachelor of Science in Computer Science / BS Computer Science / BS CS
+
+Description:
+The Bachelor of Science in Computer Science (BS CS) program is the study of computing concepts and theories, algorithmic foundations and new developments in computing, including the standards and practices in Software Engineering. The program prepares students to design and create algorithmically complex software and develop new effective algorithms for solving computing problems. Upon completion of this program, students are expected to acquire skills and disciplines required for designing, writing and modifying software components, modules and applications that comprise software solutions.
+
+The Bachelor of Science in Computer Science (BS CS) builds competencies for these jobs: Software Engineers, System Software Engineers, Research and Development Computing Professionals, Applications Software Developers, Computer Programmers, Data Scientists, Data Analysts, Machine Learning Scientists, Machine Learning Engineers, Artificial Intelligence Engineers
+
+The core courses for BS Computer Science (BS CS) are: Programming I & II, Introduction to Computing, Data Structures and Algorithms, Information Management, Applications Development And Emerging Technologies.
+
+The professional courses for BS Computer Science (BS CS) are: Discrete Structures I & II, Object-oriented Programming, Algorithms & Complexity, Automata Theory & Formal Languages, Architecture & Organization, Information Assurance and Security, Human Computer Interaction, Networks & Communications, Operating Systems, Programming Languages, Practicum, Software Engineering, Social Issues & Professional Practice, CS Thesis Writing I & II, Advanced Calculus & its Applications to CS, Discrete Structures III, Digital Logic Design and Digital Computer Circuits, Data Analytics, Mobile Development, Intelligent Systems.
+
+The elective courses for BS Computer Science (BS CS) are: Natural Language Processing, Digital Image Processing, Robotics, Parallel & Distributed Computing, Game Development, Fundamentals of Business Analytics, Enterprise Data Management, Analytics Modeling, Analytics Technique and Tools, Data Mining, Numerical Methods, Graph Theory, Linear Regression.

@@ -1,0 +1,12 @@
+Bachelor of Science in Applied Physics / BS Applied Physics / BS APP PHYS
+
+Description:
+The undergraduate degree program in Applied Physics (BS APP PHYS) is a balance between a holistic general education program and a substantial Physics curriculum. It provides the students with a comprehensive and rigorous training in physics as a foundation for careers in pure and applied physics or interdisciplinary sciences. The students will be engaged in actual experimental designs in photonics and biophysics, and in data analysis via computational simulations. On their fourth year, the students will embark on an on-the-job training either in other Physics Institutes for theoretical works, in IT-related companies, or in research laboratories. All of these activities provide the needed analytical, numerical, and experimental skills of Physics graduates.
+
+The Bachelor of Science in Applied Physics (BS APP PHYS) builds competencies for these jobs: Data Scientists, Material Scientists/Engineers in Semiconductor Companies, Programmers, Software developers, Biophysicists, Geophysicists, Senior High School Teachers, Research Assistants, Research Scientists in Government Agencies (PAGASA, PHILVOCS), Financial Analysts/Advisors
+
+The core courses for BS Applied Physics (BS APP PHYS) are: Mathematics, Probability and Statistics, Analysis I (Differential Calculus), Analysis II (Integral Calculus), Mathematical Methods in Physics I & II & III, General and Inorganic Chemistry, Introduction to Zoology.
+
+The major courses for BS Applied Physics (BS APP PHYS) are: University Physics I & II & III, Electronics, Classical Mechanics, Electricity and Magnetism I & II, Computational Physics I & II, Modern Physics, Quantum Mechanics, Statistical and Thermal Physics, Advanced Laboratory.
+
+The elective professional courses for BS Applied Physics (BS APP PHYS) are: Data Analytics, Optics/ Laser Physics, Neural Networks, Materials Science, Computer Vision/Image Processing, Signals, Quantum Mechanics.

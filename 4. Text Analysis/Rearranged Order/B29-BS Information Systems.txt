@@ -1,0 +1,12 @@
+Bachelor of Science in Information Systems / BS Information Systems / BS IS
+
+Description:
+The Bachelor of Science in Information Systems program is the study of information technology applications and effects on organizations. This program leads students to implement effective information systems including its components, tools, techniques, strategies and methodologies in various enterprise and organizational settings. The program intends to produce graduates who can assist and lead organizations in determining how information and technology-enabled business processes can be used as a strategic tool in the ever-changing business environment.
+
+The Bachelor of Science in Information Systems (BS IS) builds competencies for these jobs: Organizational Process Analysts, Data Analysts, Business System Analysts or Designers, Solutions Specialists, System Analysts, IS Project Management Personnel, Application Developers, Database Developers, Database Administrators, End User Trainers, Documentation Specialists, Quality Assurance Specialists.
+
+The core courses for BS Information Systems (BS IS) are: Programming I & II, Introduction to Computing, Data Structures and Algorithms, Information Management, Applications Development And Emerging Technologies.
+
+The professional courses for BS Information Systems (BS IS) are: Fundamentals of Information Systems, Organization and Management Concepts, IT Infrastructure and Network Technologies, Professional Issues in Information Systems, Introduction to Information Science, Financial Management, Collection Management of Information Resources, Systems Analysis and Design, Enterprise Architecture, Business Process Management, Information Resources and Services, Accounting for IS, IS Project Management, Evaluation of Business Performance, Quantitative Methods, IS Strategy Management and Acquisition, Capstone 1 and 2, Practicum 1 and 2, Seminars and Tours.
+
+The elective courses for BS Information Systems (BS IS) are: Decision Support Systems, Business Process Engineering, Technopreneurship, Information Engineering, Business Laws, Information Assurance and Security, Human Computer Interaction, Supply Chain Management, Practical Data Science, Systems Quality Testing and Assurance, and Decision Analysis.

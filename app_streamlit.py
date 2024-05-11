@@ -24,7 +24,7 @@ def init_chain():
     # Create chain
     chain = RetrievalQA.from_chain_type(llm=llm,
                                   chain_type="stuff",
-                                  retriever=vectordb.as_retriever(),
+                                  retriever=vectordb.as_retriever(k=6),
                                   return_source_documents=True)
 
     return chain
@@ -34,13 +34,10 @@ def init_chain():
 # App title
 st.set_page_config(page_title="Carolinian Chatbot")
 
-# Replicate Credentials
+# App sidebar - Refactored from https://github.com/a16z-infra/llama2-chatbot
 with st.sidebar:
     st.title('📖💬 Carolinian Chatbot')
-    st.info('Ask anything USC related here!')
-
-    # Refactored from https://github.com/a16z-infra/llama2-chatbot
-    st.subheader('Topics Covered:')
+    st.subheader('Ask anything USC Related here!')
     st.markdown('''
                 - About USC, History, Core Values
                 - Admission, Enrollment, Graduation
@@ -48,10 +45,11 @@ with st.sidebar:
                 - Simultaneous Enrollment, Override
                 - Academic and Grade Policies
                 - Code of Conduct and Offenses
+                - Motor Vehicle Pass / Car Stickers
                 - Carolinian Honors List / Latin Honors
                 - Directory of Student Support Services
                 - Directory of Academic Departments
-                - Motor Vehicle Pass / Car Stickers
+                - Undergraduate Academic Programs
                 ''')
     
     st.markdown('''
@@ -59,10 +57,9 @@ with st.sidebar:
 
                 - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)
                 - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
+                - [USC Undergraduate Programs](https://www.usc.edu.ph/academics/undergraduate-programs)
                 ''')
-    st.markdown('Developed by: [Wayne Dayata (GitHub)](https://github.com/20100215)')
-
-
+    st.markdown('2024.05.12 - Developed by: [Wayne Dayata (GitHub)](https://github.com/20100215)')
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -96,7 +93,7 @@ def generate_response(prompt_input):
     result += '\n\nSources: '
     sources = [] 
     for source in res["source_documents"]:
-        sources.append(source.metadata['source'][3:-4]) # Remove XX- and .txt
+        sources.append(source.metadata['source'][4:-4]) # Remove AXX- and .txt
     top_source = sources[0]
     sources = set(sources) # Remove duplicate sources (multiple chunks)
     result += ", ".join(sources)
@@ -113,8 +110,8 @@ if prompt := st.chat_input(placeholder="Ask a question..."):
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("Generating response..."):
-            response, answer, top_source = generate_response(prompt)
             placeholder = st.empty()
+            response, answer, top_source = generate_response(prompt)
             placeholder.markdown(response)
     message = {"role": "assistant", "content": response}
 

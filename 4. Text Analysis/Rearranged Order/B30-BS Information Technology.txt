@@ -1,0 +1,12 @@
+Bachelor of Science in Information Technology / BS Information Technology / BS IT
+
+Description:
+The Bachelor of Science in Information Technology (BS IT) program includes the study of the utilization of both hardware and software technologies involving planning, installing, customizing, operating, managing, administering, and maintaining information technology infrastructure that provides computing solutions to address the needs of an organization. The program prepares graduates to address various user needs involving the selection, development, application, integration, and management of computing technologies within an organization.
+
+The Bachelor of Science in Information Technology (BS IT) builds competencies for these jobs: Web and Applications Developers, Junior Database Administrators, Systems Administrators, Network Engineers, Junior Information Security Administrators, Systems Integration Personnel, IT Audit Assistants, Quality Assurance Specialists, Systems Analysts, Computer Programmers, Data Analysts
+
+The core courses for BS Information Technology (BS IT) are: Programming I & II, Introduction to Computing, Data Structures and Algorithms, Information Management, Applications Development And Emerging Technologies.
+
+The professional courses for BS Information Technology (BS IT) are: Human Computer Interaction, Information Assurance & Security, Information Management, Integrative Programming and Technologies, Networking, Platform Technologies, Systems Administration & Maintenance, Systems Integration & Architecture, Social and Professional Issues, Web Systems and Technologies, Practicum, Capstone I & II, Discrete Structures, Digital Logic Design, Object Oriented Programming, Probability and Statistics, System Analysis & Design, Software Quality Assurance, Accounting for IT, Fundamentals of Data Warehousing & Data Mining, Linux Operating System, Quantitative Methods, Research Methods in Computing, IT Seminars.
+
+The elective courses for BS Information Technology (BS IT) are: Business Analytics for IT, Enterprise Analysis & Modelling, Mobile Software Development, Game Development, Network Management, Network Security, Cloud Infrastructure and Services.
