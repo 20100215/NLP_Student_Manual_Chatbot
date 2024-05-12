@@ -67,14 +67,19 @@ if "messages" not in st.session_state.keys():
         st.session_state.chain = init_chain()
         st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
+container = None
+prompt = None
 
 def ask_question(str):
-    st.session_state.messages.append({"role": "user", "content": str})
+    global container, prompt
+    prompt = str
+    st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
-        st.write(str)
-
+        st.write(prompt)
+    container = None
+    
 # Display sample questions
-if True:
+if len(st.session_state.messages) <= 1:
     container = st.container(border=True)
     container.subheader('Sample questions:')
     container.button('How do I enroll?', on_click=ask_question, args=['How do I enroll?'])
@@ -84,8 +89,6 @@ if True:
     container.button('What is the difference between overload, tutorial, and override?', on_click=ask_question, args=['What is the difference between overload, tutorial, and override?'])
     container.button('Can you explain more about family previleges?', on_click=ask_question, args=['Can you explain more about family previleges?'])
     container.button('Can you show me the guidelines on civilian clothing?', on_click=ask_question, args=['Can you show me the guidelines on civilian clothing?'])
-else:
-    container = st.empty()
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -95,7 +98,6 @@ for message in st.session_state.messages:
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
-
 
 # Function for generating response
 def generate_response(prompt_input):
