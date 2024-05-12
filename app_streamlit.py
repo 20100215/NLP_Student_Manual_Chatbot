@@ -82,7 +82,7 @@ for message in st.session_state.messages:
 if len(st.session_state.messages) <= 1:
     container = st.container(border=True)
     container.subheader('Sample questions:')
-    container.button('How do I enroll?', on_click=ask_question, args=['How do I enroll?'])
+    container.button('How to enroll?', on_click=ask_question, args=['How to enroll?'])
     container.button('How do I apply for a car sticker?', on_click=ask_question, args=['How do I apply for a car sticker?'])
     container.button('Who to contact about student organizations?', on_click=ask_question, args=['Who to contact about student organizations?'])
     container.button('What is the difference between BS CS and BS IT?', on_click=ask_question, args=['What is the difference between BS CS and BS IT?'])
