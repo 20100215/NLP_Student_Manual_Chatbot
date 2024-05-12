@@ -125,7 +125,7 @@ if prompt := st.chat_input(placeholder="Ask a question..."):
 
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
-    prompt = st.session_state.messages[-1]["message"]
+    prompt = st.session_state.messages[-1]["content"]
     with st.chat_message("assistant"):
         with st.spinner("Generating response..."):
             placeholder = st.empty()
