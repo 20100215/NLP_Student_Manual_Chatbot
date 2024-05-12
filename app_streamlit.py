@@ -88,7 +88,7 @@ if len(st.session_state.messages) <= 1:
     container.button('What is the difference between BS CS and BS IT?', on_click=ask_question, args=['What is the difference between BS CS and BS IT?'])
     container.button('What is the difference between overload, tutorial, and override?', on_click=ask_question, args=['What is the difference between overload, tutorial, and override?'])
     container.button('Can you explain more about family previleges?', on_click=ask_question, args=['Can you explain more about family previleges?'])
-    container.button('Can you show me the guidelines on civilian clothing?', on_click=ask_question, args=['Can you show me the guidelines on civilian clothing?'])
+    container.button('Please discuss the core values of USC.', on_click=ask_question, args=['Please discuss the core values of USC.'])
 else:
     container = st.empty()
 
@@ -124,9 +124,9 @@ def generate_response(prompt_input):
 # User-provided prompt
 if prompt := st.chat_input(placeholder="Ask a question..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
+    container = st.empty()
     with st.chat_message("user"):
         st.write(prompt)
-    container = st.empty()
 
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
