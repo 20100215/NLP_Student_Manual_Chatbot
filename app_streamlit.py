@@ -74,8 +74,6 @@ def ask_question(str):
     global container, prompt
     prompt = str
     st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.write(prompt)
     container = None
     
 # Display sample questions
