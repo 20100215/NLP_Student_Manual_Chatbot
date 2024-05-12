@@ -89,6 +89,8 @@ if len(st.session_state.messages) <= 1:
     container.button('What is the difference between overload, tutorial, and override?', on_click=ask_question, args=['What is the difference between overload, tutorial, and override?'])
     container.button('Can you explain more about family previleges?', on_click=ask_question, args=['Can you explain more about family previleges?'])
     container.button('Can you show me the guidelines on civilian clothing?', on_click=ask_question, args=['Can you show me the guidelines on civilian clothing?'])
+else:
+    container = st.empty()
 
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
