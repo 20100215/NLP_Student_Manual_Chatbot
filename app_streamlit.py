@@ -70,6 +70,8 @@ if "messages" not in st.session_state.keys():
 
 def ask_question(str):
     st.session_state.messages.append({"role": "user", "content": str})
+    global container
+    container = None
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -122,6 +124,7 @@ if prompt := st.chat_input(placeholder="Ask a question..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.write(prompt)
+    container = None
 
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
