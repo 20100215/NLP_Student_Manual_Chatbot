@@ -19,3 +19,8 @@ Chat about anything USC related here! NOTE: Not OpenAI, but open-sourced Llama 3
 
 - [USC Student Manual 2023](https://drive.google.com/file/d/1rFThhqMrVqMF0k0wMFMOIZuraF4AywYN/view?usp=drive_link)
 - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
+- [USC Undergraduate Programs](https://www.usc.edu.ph/academics/undergraduate-programs)
+
+## Generated Questions:
+
+[View here](https://github.com/20100215/NLP_Student_Manual_Chatbot/blob/main/5.%20Model_QG/N5c_Student_Manual_QG_All_v2.ipynb)
