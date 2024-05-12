@@ -74,7 +74,7 @@ def ask_question(str):
         st.write(str)
 
 # Display sample questions
-if len(st.session_state.messages) <= 1:
+if true:
     container = st.container(border=True)
     container.subheader('Sample questions:')
     container.button('How do I enroll?', on_click=ask_question, args=['How do I enroll?'])
