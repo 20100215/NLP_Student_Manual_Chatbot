@@ -61,11 +61,28 @@ with st.sidebar:
                 ''')
     st.markdown('2024.05.12 - Developed by: [Wayne Dayata](https://github.com/20100215)')
 
+
+def ask_question(str):
+    st.session_state.messages.append({"role": "user", "content": str})
+    with st.chat_message("user"):
+        st.write(str)
+
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
     with st.spinner("Initializing, please wait..."):
         st.session_state.chain = init_chain()
         st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
+    container = st.container(border=True)
+    container.subheader('Sample questions:')
+    container.button('How do I enroll?', on_click=ask_question, args=['How do I enroll?'])
+    container.button('How do I apply for a car sticker?', on_click=ask_question, args=['How do I apply for a car sticker?'])
+    container.button('Who to contact about student organizations?', on_click=ask_question, args=['Who to contact about student organizations?'])
+    container.button('What is the difference between BS CS and BS IT?', on_click=ask_question, args=['What is the difference between BS CS and BS IT?'])
+    container.button('What is the difference between overload, tutorial, and override?', on_click=ask_question, args=['What is the difference between overload, tutorial, and override?'])
+    container.button('Can you explain more about family previleges?', on_click=ask_question, args=['Can you explain more about family previleges?'])
+    container.button('Can you show me the guidelines on civilian clothing?', on_click=ask_question, args=['Can you show me the guidelines on civilian clothing?'])
+else:
+    container = st.empty()
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -75,6 +92,7 @@ for message in st.session_state.messages:
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+
 
 
 
@@ -88,6 +106,9 @@ def generate_response(prompt_input):
     if('According to the provided context, ' in res['result']):
         res['result'] = res['result'][35:]
         res['result'] = res['result'][0].upper() + res['result'][1:]
+    elif('Based on the provided context, ' in res['result']):
+        res['result'] = res['result'][31:]
+        res['result'] = res['result'][0].upper() + res['result'][1:]    
     result += res['result']
     # Process sources
     result += '\n\nSources: '
