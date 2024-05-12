@@ -61,17 +61,20 @@ with st.sidebar:
                 ''')
     st.markdown('2024.05.12 - Developed by: [Wayne Dayata](https://github.com/20100215)')
 
+# Store LLM generated responses
+if "messages" not in st.session_state.keys():
+    with st.spinner("Initializing, please wait..."):
+        st.session_state.chain = init_chain()
+        st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
+
 
 def ask_question(str):
     st.session_state.messages.append({"role": "user", "content": str})
     with st.chat_message("user"):
         st.write(str)
 
-# Store LLM generated responses
-if "messages" not in st.session_state.keys():
-    with st.spinner("Initializing, please wait..."):
-        st.session_state.chain = init_chain()
-        st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
+# Display sample questions
+if len(st.session_state.messages) <= 1:
     container = st.container(border=True)
     container.subheader('Sample questions:')
     container.button('How do I enroll?', on_click=ask_question, args=['How do I enroll?'])
@@ -92,8 +95,6 @@ for message in st.session_state.messages:
 def clear_chat_history():
     st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
-
-
 
 
 # Function for generating response
