@@ -69,7 +69,7 @@ if "messages" not in st.session_state.keys():
 
 
 def ask_question(str):
-    st.session_state.messages.append({"role": "user", "content": prompt})
+    st.session_state.messages.append({"role": "user", "content": str})
 
 # Display or clear chat messages
 for message in st.session_state.messages:
