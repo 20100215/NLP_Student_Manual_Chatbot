@@ -24,7 +24,7 @@ def init_chain():
     # Create chain
     chain = RetrievalQA.from_chain_type(llm=llm,
                                   chain_type="stuff",
-                                  retriever=vectordb.as_retriever(k=6),
+                                  retriever=vectordb.as_retriever(k=5),
                                   return_source_documents=True)
 
     return chain
@@ -78,17 +78,22 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
 
+sample_questions = [
+    'How to enroll?',
+    'How do I apply for a car sticker?',
+    'Who to contact about student organizations?',
+    'What is the difference between BS CS and BS IT?',
+    'What is the difference between overload, tutorial, and override?',
+    'What are the fee discounts available and how can I apply for them?',
+    'Please discuss the core values of USC.'
+]
+
 # Display sample questions
 if len(st.session_state.messages) <= 1:
     container = st.container(border=True)
     container.subheader('Sample questions:')
-    container.button('How to enroll?', on_click=ask_question, args=['How to enroll?'])
-    container.button('How do I apply for a car sticker?', on_click=ask_question, args=['How do I apply for a car sticker?'])
-    container.button('Who to contact about student organizations?', on_click=ask_question, args=['Who to contact about student organizations?'])
-    container.button('What is the difference between BS CS and BS IT?', on_click=ask_question, args=['What is the difference between BS CS and BS IT?'])
-    container.button('What is the difference between overload, tutorial, and override?', on_click=ask_question, args=['What is the difference between overload, tutorial, and override?'])
-    container.button('Can you explain more about family previleges?', on_click=ask_question, args=['Can you explain more about family previleges?'])
-    container.button('Please discuss the core values of USC.', on_click=ask_question, args=['Please discuss the core values of USC.'])
+    for question in sample_questions:
+        container.button(question, on_click=ask_question, args=[question])
 else:
     container = st.empty()
 
