@@ -67,14 +67,9 @@ if "messages" not in st.session_state.keys():
         st.session_state.chain = init_chain()
         st.session_state.messages = [{"role": "assistant", "content": "How may I help you today, Carolinian?"}]
 
-container = None
-prompt = None
 
 def ask_question(str):
-    global container, prompt
-    prompt = str
     st.session_state.messages.append({"role": "user", "content": prompt})
-    container = None
 
 # Display or clear chat messages
 for message in st.session_state.messages:
