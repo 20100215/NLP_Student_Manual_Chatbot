@@ -1,0 +1,109 @@
+,articles,char lengths,token lengths
+0,A00-Abbreviations.txt,3655,707
+1,A01-Description.txt,3508,723
+2,"A02-Catholic Identity, Vision Mission and Core Values.txt",4137,814
+3,A03-The University Seal.txt,854,200
+4,A04-History.txt,7722,1682
+5,A05-University Saints.txt,6082,1385
+6,A06-USC Organizational Structure.txt,4880,937
+7,A07-Admission.txt,3591,650
+8,A08-Admission Steps for Freshmen.txt,2044,442
+9,A09-Admission Steps for International Students.txt,3591,682
+10,A10-Admission Steps for Transferee.txt,1729,375
+11,A11-Admission Steps for Graduate Students.txt,3475,711
+12,A12-Admission Steps for Juris Doctor.txt,2899,621
+13,A13-College Entrance Examination.txt,4329,928
+14,A14-Post-Admission Enrollment Requirements.txt,10808,2172
+15,A15-Post-Admission Enrollment Steps.txt,2849,611
+16,A16-Enrollment Mechanics.txt,3589,689
+17,A17-Enrollment Timeline.txt,2239,425
+18,A18-Enrollment Steps for Continuing Students.txt,3347,704
+19,A19-Enrollment Concerns.txt,4579,911
+20,A20-Course Accreditation.txt,1186,224
+21,A21-Course Override.txt,1041,209
+22,A22-Course Equivalency (In-Lieu).txt,1416,282
+23,A23-Overload.txt,948,194
+24,A24-Simultaneous Enrollment.txt,1237,242
+25,A25-Tutorial and Petition.txt,1628,334
+26,A26-Course Withdrawal.txt,2245,436
+27,A27-Additional Enrollment Steps (Returnee).txt,980,192
+28,A28-Additional Enrollment Steps (Shiftee).txt,1291,256
+29,A29-Additional Enrollment Steps (Returnee-shiftee).txt,1287,262
+30,A30-Additional Enrollment Steps (Scholarship and Financial Assistance).txt,1127,227
+31,A31-Fee Discounts.txt,1224,256
+32,A32-Transferring out of USC.txt,812,161
+33,A33-USC Email and Canvas.txt,1573,350
+34,A34-Fees and Fees Adjustments.txt,3198,624
+35,A35-Curricular and Non-Curricular Requirements.txt,10184,2050
+36,A36-General Courses.txt,2305,469
+37,A37-Academic Performance and Grading System.txt,7701,1779
+38,"A38-Scholarships, Grants, and Loans (USC-SVE, StuFAP, and SGLs).txt",2904,560
+39,A39-Graduation.txt,4659,986
+40,A40-CHL Rationale and Aims.txt,1607,310
+41,A41-Recognition and Previleges.txt,2367,556
+42,A42-Qualification and percentage distribution.txt,2589,545
+43,A43-Process and Computation.txt,2902,623
+44,A44-CHL Awards for Commencement Rites.txt,729,164
+45,A45-Rationale of Discipline and positive School Climate.txt,4695,827
+46,A46-Code of Conduct for Students.txt,12157,2268
+47,A47-Civilian Attire and Grooming.txt,1553,368
+48,A48-Progressive and Positive Discipline Policy.txt,6389,1210
+49,A49-University-Wide Discipline and Persons in Authority.txt,2070,399
+50,A50-Categories and Ranking of Offenses.txt,6721,1320
+51,A51-List of Offenses.txt,12378,2774
+52,A52-Clearance and Hold Orders.txt,525,92
+53,A53-Guidelines for Ensuring Discipline and Due Process.txt,3779,764
+54,A54-Policy for Pregnant Women.txt,391,72
+55,A55-Jurisdiction.txt,758,140
+56,A56-Sanctions.txt,1120,214
+57,A57-Student Organization Registration and Supervision.txt,4653,865
+58,A58-Educational Tours and Field Trips.txt,825,173
+59,A59-Quality Policy.txt,1907,326
+60,A60-Directory of Student Support Services and Programs Part 1.txt,10560,2177
+61,A61-Directory of Student Support Services and Programs Part 2.txt,11062,2310
+62,A62-Directory of Academic Programs and Departments Part 1.txt,7608,1785
+63,A63-Directory of Academic Programs and Departments Part 2.txt,5818,1428
+64,A64-Motor Vehicle Pass Application.txt,4528,885
+65,A65-Motor Vehicle Rules and Guidelines.txt,3399,668
+66,B01-BA Anthropology.txt,2080,409
+67,B02-BA Communication Major in Media.txt,1669,298
+68,B03-BA English Language Studies.txt,1562,302
+69,B04-BA Literary and Cultural Studies with Creative Writing.txt,2083,394
+70,B05-BA Political Science IRFS Track.txt,3669,657
+71,B06-BA Political Science LPS Track.txt,3386,620
+72,B07-B Fine Arts - Advertising Arts.txt,2446,497
+73,B08-B Fine Arts - Cinema.txt,2676,602
+74,B09-B Philosophy.txt,2394,459
+75,B10-BS Accountancy.txt,3473,606
+76,B11-BS Applied Physics.txt,1996,377
+77,B12-BS Architecture.txt,2629,431
+78,B13-BS Biology.txt,1761,334
+79,B14-BS Business Administration Major in Finance Management.txt,2719,471
+80,B15-BS Business Administration Major in Human Resource Management.txt,2444,412
+81,B16-BS Business Administration Major in Marketing Management.txt,2571,436
+82,B17-BS Business Administration Major in Operations Management.txt,2808,481
+83,B18-BS Chemical Engineering.txt,3740,636
+84,B19-BS Chemistry.txt,1670,340
+85,B20-BS Civil Engineering.txt,3566,607
+86,B21-BS Computer Engineering.txt,2769,477
+87,B22-BS Computer Science.txt,2232,374
+88,B23-BS Economics.txt,2463,438
+89,B24-BS Electrical Engineering.txt,2837,470
+90,B25-BS Electronics Engineering.txt,2908,496
+91,B26-BS Entrepreneurship.txt,1933,349
+92,B27-BS Hospitality Management.txt,3865,706
+93,B28-BS Industrial Engineering.txt,2666,459
+94,B29-BS Information Systems.txt,2265,375
+95,B30-BS Information Technology.txt,2194,365
+96,B31-BS Interior Design.txt,2206,401
+97,B32-B Landscape Architecture.txt,2560,431
+98,B33-BS Management Accounting.txt,4251,718
+99,B34-BS Marine Biology.txt,1985,389
+100,B35-BS Mechanical Engineering.txt,3716,676
+101,B36-BS Nursing.txt,3048,631
+102,B37-BS Nutrition and Dietetics.txt,2197,429
+103,B38-BS Pharmacy.txt,3219,559
+104,B39-BS Psychology.txt,2184,398
+105,B40-BS Tourism Management.txt,3364,598
+106,B41-B Secondary Education Major in Science.txt,2599,472
+107,B42-B Special Needs Education with specialization in Early Childhood Education.txt,3854,704
