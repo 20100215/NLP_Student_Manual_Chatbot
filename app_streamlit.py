@@ -120,11 +120,11 @@ def generate_response(prompt_input):
     sources = [] 
     for source in res["source_documents"]:
         sources.append(source.metadata['source'][4:-4]) # Remove AXX- and .txt
-    top_source = sources[0]
+    source_list = ", ".join(sources) # store all sources
     sources = set(sources) # Remove duplicate sources (multiple chunks)
-    result += ", ".join(sources)
+    result += source_list
 
-    return result, res['result'], top_source
+    return result, res['result'], source_list
 
 # User-provided prompt
 if prompt := st.chat_input(placeholder="Ask a question..."):
@@ -139,11 +139,11 @@ if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
         with st.spinner("Generating response..."):
             placeholder = st.empty()
-            response, answer, top_source = generate_response(prompt)
+            response, answer, source_list = generate_response(prompt)
             placeholder.markdown(response)
     message = {"role": "assistant", "content": response}
 
     # Post question and answer to Google Sheets via Apps Script
     url = os.environ['SCRIPT_URL']
-    requests.post(url, data = {"question": prompt, "answer": answer, "top_source": top_source})
+    requests.post(url, data = {"question": prompt, "answer": answer, "top_source": source_list})
     st.session_state.messages.append(message)
