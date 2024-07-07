@@ -59,7 +59,7 @@ with st.sidebar:
                 - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
                 - [USC Undergraduate Programs](https://www.usc.edu.ph/academics/undergraduate-programs)
                 ''')
-    st.markdown('2024.05.12 - Developed by: [Wayne Dayata](https://github.com/20100215)')
+    st.markdown('2024.07.07 - (c) [Wayne Dayata](https://www.linkedin.com/in/wayne-matthew-dayata/) and [Sabrinah Yap](https://www.linkedin.com/in/yap-sabrinah/)')
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
