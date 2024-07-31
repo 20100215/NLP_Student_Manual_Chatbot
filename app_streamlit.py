@@ -19,7 +19,7 @@ def init_chain():
     model_kwargs = {'trust_remote_code': True}
     embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
     llm = ChatGroq(model_name="llama3-70b-8192", temperature=0.2)
-    vectordb = Chroma(persist_directory='db_v3', embedding_function=embedding)
+    vectordb = Chroma(persist_directory='db_v4', embedding_function=embedding)
 
     # Create chain
     chain = RetrievalQA.from_chain_type(llm=llm,
@@ -43,10 +43,10 @@ with st.sidebar:
                 - Admission, Enrollment, Graduation
                 - Tutorial, Petition, Overload
                 - Simultaneous Enrollment, Override
-                - Academic and Grade Policies
+                - Academic, Grade, Honors Policies
                 - Code of Conduct and Offenses
                 - Motor Vehicle Pass / Car Stickers
-                - Carolinian Honors List / Latin Honors
+                - Student Organizations and Activities
                 - Directory of Student Support Services
                 - Directory of Academic Departments
                 - Undergraduate Academic Programs
@@ -59,7 +59,7 @@ with st.sidebar:
                 - [USC Enrollment Guide](https://enrollmentguide.usc.edu.ph)
                 - [USC Undergraduate Programs](https://www.usc.edu.ph/academics/undergraduate-programs)
                 ''')
-    st.markdown('2024.07.07 - &copy; [Wayne](https://www.linkedin.com/in/wayne-matthew-dayata/) and [Sabrinah](https://www.linkedin.com/in/yap-sabrinah/)')
+    st.markdown('2024.08.01 - &copy; [Wayne](https://www.linkedin.com/in/wayne-matthew-dayata/) and [Sabrinah](https://www.linkedin.com/in/yap-sabrinah/)')
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
@@ -81,7 +81,7 @@ for message in st.session_state.messages:
 sample_questions = [
     'How to enroll?',
     'How do I apply for a car sticker?',
-    'Who to contact about student organizations?',
+    'What are the guidelines for the conduct of activities?',
     'What is the difference between BS CS and BS IT?',
     'What is the difference between overload, tutorial, and override?',
     'What are the fee discounts available and how can I apply for them?',
@@ -108,10 +108,10 @@ def generate_response(prompt_input):
     # Invoke chain
     res = st.session_state.chain.invoke(prompt_input)
     # Process response
-    if('According to the provided context, ' in res['result']):
+    if res['result'].startswith('According to the provided context, '):
         res['result'] = res['result'][35:]
         res['result'] = res['result'][0].upper() + res['result'][1:]
-    elif('Based on the provided context, ' in res['result']):
+    elif res['result'].startswith('Based on the provided context, '):
         res['result'] = res['result'][31:]
         res['result'] = res['result'][0].upper() + res['result'][1:]    
     result += res['result']
