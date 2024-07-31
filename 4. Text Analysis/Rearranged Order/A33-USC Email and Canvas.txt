@@ -24,3 +24,7 @@ The official Learning Management System (LMS) for University of San Carlos is Ca
 7. Login to Canvas at https://usc.instructure.com.
 8. Username: your USC email address.
 9. Your enrolled courses are displayed on the dashboard.
+
+For continuing students, simply log in to Canvas on the website (https://usc.instructure.com) and enter your USC email and password.
+
+If you have any concerns about Canvas, contact the IRMO office (irmotns@usc.edu.ph)

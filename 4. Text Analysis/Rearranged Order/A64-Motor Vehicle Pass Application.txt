@@ -2,9 +2,13 @@ Topic 64: Motor Vehicle Pass Application
 
 All USC personnel intending to bring their motor vehicles to the university campuses should have a motor vehicle pass or car sticker corresponding to each vehicle they bring. The application for motor vehicle pass stickers is only available during the first month of the semester and cannot be accessed outside of the said period. The motor vehicle pass or car sticker must be renewed every semester.
 
+Note: For outsiders, they are to be secured a Campus Entry permit instead which is applied by the activity organizers, and not the motorvehicle pass as this is intended only for all USC personnel only. there is no payment for the Campus Entry Permit.
+
 Before applying for a motor vehicle pass or car sticker, Check whether you are eligible to apply for a Motor Vehicle Pass Sticker or not. The following are eligible to apply for a motor vehicle pass: A student who is currently enrolled; A faculty member with teaching load or deloaded units; a personnel who is included in the roster of active employees; a contractor with an active contract or notice to proceed.; a guest with appropriate Contract or Memorandum of Agreement; a concessionaire with Food Services Agreement; a Miradel resident who is included in the official roster; an agency personnel who is in the list of personnel issued by the agency; a member of the SVD community, here referred to as SVD; an incumbent Board of Director or Cabinet member, here referred to as VIP.
 
 To apply for a motor vehicle pass or car sticker, login to the system using your ISMIS account for students, faculty, and admin. If you have forgotten your ISMIS account password, simply click on Forgot Password and a link will be sent to your registered email. Click on the link sent to your email and reset your password. For those who have no ISMIS account such as guests, you can register by clicking on Register for Motor Vehicle Pass Application besides the login form of ISMIS. Complete the registration procedure to be able to activate your username and password.
+
+The application period for motor vehicle pass stickers usually lasts for the first two months of a given semester. Announcements regarding this are posted in the home page of the ISMIS portal right after you have logged in.
 
 Once you are in the ISMIS portal, click "Motor Vehicle Pass" and then "Sticker Application". Check if you have already applied online by clicking on "Application History" under Motor Vehicle Pass Sticker Application. If there is an entry there, then you just have to renew your Motor Vehicle Pass Sticker by clicking on "Renewal". If there is no entry in the Application History, click on "New Application".
 

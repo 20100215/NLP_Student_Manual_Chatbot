@@ -41,7 +41,7 @@ DCISM stands for Department of Computer, Information Sciences, and Mathematics.
 DCLL stands for Department of Communications, Linguistics, and Literature.
 DCPE stands for Department of Computer Engineering.
 DEEE stands for Department of Electrical and Electronics Engineering.
-ORA stands for University Office of Recruitment and Admissions.
+ORA stands for Office of Recruitment and Admissions.
 CAE stands for College Admission Examinations.
 HCCH stands for Hague Conference on Private International Law.
 CTC stands for Certificate of Transfer Credentials.

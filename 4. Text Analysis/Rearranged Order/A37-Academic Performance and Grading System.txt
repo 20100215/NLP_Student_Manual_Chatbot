@@ -2,7 +2,7 @@ Topic 37: Academic Performance and Grading System
 
 Attendance. A student who incurs unexcused absences of more than 20% of the prescribed number of class hours or laboratory periods during the term should be given NC or 5.0.
 
-Probation and Retention. If in any term, astudent fails in one-third of the units in which he/she is enrolled, he/she should not re-enroll in the same program without approval from the School Dean and the endorsement of the Department Chair. If the student fails the second time, he/she may enroll in another program if accepted by the Department Chair concerned. A student is disqualified from the University if he/she fails the third time. 
+Probation and Retention. If in any term, astudent fails in one-third of the units in which he/she is enrolled, he/she should not re-enroll in the same program without approval from the School Dean and the endorsement of the Department Chair. If the student fails the second time, he/she may enroll in another program if accepted by the Department Chair concerned. A student is disqualified from the University if he/she fails the third time. For inquiries on the probation and retention policies, you may contact either the registrar or your department chair for your academic records to be examined.
 
 As a general rule, disqualification from the program no longer applies to the third-year level of a four-year program and to the fourth-year level of a five-year program. However, each department may have its own retention policy with the approval of the Vice President for Academic Affairs.
 
@@ -25,7 +25,7 @@ NC means no credit, a Final grade which does not earn credit nor indicate failur
 
 W means withdrawal of enrollment from course/s with official notice.
 
-IP means in Progress, a grade given to students who are still working on their thesis for a maximum of one (1) year. It cannot be used for courses other than thesis. Once they complete their thesis, students will earn a numerical grade.
+IP means in Progress, a grade given to students who are still working on their thesis for a maximum of one (1) year. It cannot be used for courses other than thesis. Once they complete their thesis, students will earn a numerical grade. IP grades are only applicable for higher degree programs and not for Bachelor degree programs. For policies about thesis in bachelor's or undergraduate degree programs, consult the program coordinator or department chair of your program.
 
 Computation of Grade Point Average (GPA). The GPA is computed in all curricula by multiplying the number of units assigned to a course by the final grade earned and then by dividing the summation of the products by the total number of units enrolled for the term. Grades of 5.0 and NC of credit courses are, however, included in the GPA calculation. Grade in NSTP is excluded from the computation. Practicum/Internship/OJT will be included in the computation of the GPA provided that the department considers it as an academic course and that the department has obtained prior approval from the VPAA.
 
@@ -34,6 +34,8 @@ Dean’s Honors List. The University recognizes superior scholastic achievement 
 - A Grade Point Average (GPA) of at least 1.70.
 - Of good moral character and has not been found guilty of any offenses.
 Students in the Dean’s Honors List qualify for the Carolinian Honors List, with Scientia representing 70% of the computation. These are the students with a Grade Point Average (GPA) of 1.0 to 1.7.
+
+If a student does not enroll in the complete number of units as prescribed for the semester, he or she is not eligible in the Dean's list nor the Carolinian Honors List (CHL) for the semester, since he or she is no longer a regular student. Enrolling in different courses than what is specified in the prospectus does not affect a student's eligibility to be in the Dean's List for as long as he or she still achieves the prescribed number of units for the semester.
 
 Carolinian’s Honors List. In view of the Mission and Vision of the University of San Carlos, whichaims to develop competent and socially responsible professionals and life-long learners in an environment that fosters excellence in the academic core processes of teaching-learning, research, and community extension service, the Carolinian Honors List (CHL) recognizes the holistic achievements of the student in the University.
 
