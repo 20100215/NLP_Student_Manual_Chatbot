@@ -81,11 +81,11 @@ for message in st.session_state.messages:
 sample_questions = [
     'How to enroll?',
     'How do I apply for a car sticker?',
-    'What are the guidelines for the conduct of activities?',
-    'What is the difference between BS CS and BS IT?',
     'What is the difference between overload, tutorial, and override?',
     'What are the fee discounts available and how can I apply for them?',
-    'Please discuss the core values of USC.'
+    'What are the guidelines for pre, during, and after activities for OSFA?',
+    'What are the differences between BS CS, BS IT, BS IS, and BS CpE in terms of their focus, career paths, and courses?',
+    'What free elective courses do you recommend for students interested in business?'
 ]
 
 # Display sample questions
