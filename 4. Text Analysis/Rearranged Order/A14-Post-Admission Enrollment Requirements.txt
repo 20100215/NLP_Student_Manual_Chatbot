@@ -106,3 +106,5 @@ Philippine-born alien students (children of foreign nationals in the Philippines
 The name and other personal data and circumstances of each student as indicated in his/her birth certificate or Alien Certificate of Registration, where applicable, shall prevail.
 
 To retrieve the files you submitted to the university during admission, you have to go to the records section of the registrar's office and inquire the assigned evaluator of your school.
+
+Note that only applicants who have submitted thir complete requirements will be issued an ISMIS account used for enrollment. For those who have not received their ISMIS activation emails, ensure that you have submitted all the requirements and then email irmoacs@usc.edu.ph. Do check the spam folder as the email might be sent there. Your ISMIS username is your student ID number.

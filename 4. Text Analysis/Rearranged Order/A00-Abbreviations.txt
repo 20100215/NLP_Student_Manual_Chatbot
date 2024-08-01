@@ -69,3 +69,6 @@ SDM stands for Student Development Mentors.
 SDEVCOM stands for Student Development Committee.
 SDO stands for Student Discipline Officer.
 SDC stands for Student Discipline Committee.
+DASH stands for Department of Anthropology, Sociology, and History.
+DCISM stands for Department of COmputer, Information Sciences, and Mathematics.
+DCLL stands for Department of Communications, Linguistics, and Literature.
