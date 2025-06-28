@@ -18,7 +18,7 @@ from langchain.chains import RetrievalQA
 def init_chain():
     model_kwargs = {'trust_remote_code': True}
     embedding = HuggingFaceEmbeddings(model_name='nomic-ai/nomic-embed-text-v1.5', model_kwargs=model_kwargs)
-    llm = ChatGroq(model_name="llama3-70b-8192", temperature=0.2)
+    llm = ChatGroq(model_name="llama3.3-70b-versatile", temperature=0.2)
     vectordb = Chroma(persist_directory='db_v4.1', embedding_function=embedding)
 
     # Create chain
